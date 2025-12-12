@@ -1,0 +1,105 @@
+.charts {
+  max-width: 1400px;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.chart-header h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.chart-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.symbol-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 120px;
+}
+
+.timeframe-select {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.chart-container {
+  background: linear-gradient(135deg, #1e2139 0%, #252a47 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 2rem;
+}
+
+.watchlist {
+  background: linear-gradient(135deg, #1e2139 0%, #252a47 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.watchlist h2 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.watchlist-items {
+  display: grid;
+  gap: 1rem;
+}
+
+.watchlist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.watchlist-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.watchlist-item.active {
+  border: 1px solid #667eea;
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.watchlist-item .sym {
+  font-weight: 700;
+  color: #fff;
+}
+
+.watchlist-item .price {
+  color: #8b92b0;
+}
+
+.watchlist-item .change {
+  font-weight: 600;
+}
+
+.watchlist-item .change.positive {
+  color: #10b981;
+}
+
+.watchlist-item .change.negative {
+  color: #ef4444;
+}
