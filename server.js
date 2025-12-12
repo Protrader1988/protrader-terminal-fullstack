@@ -18,8 +18,24 @@ app.use(express.json());
 // Routes
 app.use('/api/alpaca', alpacaRoutes);
 app.use('/api/gemini', geminiRoutes);
-app.use('/api/github', githubRoutes);
+
 app.use('/api/render', renderRoutes);
+
+// Root health check route
+app.get('/', (req, res) => {
+    res.json({ 
+          status: 'ProTrader Backend is running',
+          version: '1.0.0',
+          timestamp: new Date().toISOString(),
+          endpoints: {
+                  health: '/health',
+                  alpaca: '/api/alpaca/*',
+                  gemini: '/api/gemini/*',
+                  github: '/api/github/*',
+                  render: '/api/render/*'
+          }
+    });
+});
 
 // Health check
 app.get('/health', (req, res) => {
