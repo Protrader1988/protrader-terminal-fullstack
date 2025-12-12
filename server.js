@@ -4,7 +4,6 @@ const dotenv = require('dotenv');
 const alpacaRoutes = require('./routes/alpaca');
 const geminiRoutes = require('./routes/gemini');
 const githubRoutes = require('./routes/github');
-const renderRoutes = require('./routes/render');
 
 dotenv.config();
 
@@ -19,7 +18,6 @@ app.use(express.json());
 app.use('/api/alpaca', alpacaRoutes);
 app.use('/api/gemini', geminiRoutes);
 
-app.use('/api/render', renderRoutes);
 
 // Root health check route
 app.get('/', (req, res) => {
@@ -32,7 +30,6 @@ app.get('/', (req, res) => {
                   alpaca: '/api/alpaca/*',
                   gemini: '/api/gemini/*',
                   github: '/api/github/*',
-                  render: '/api/render/*'
           }
     });
 });
