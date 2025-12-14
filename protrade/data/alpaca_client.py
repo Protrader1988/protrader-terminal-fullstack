@@ -6,8 +6,8 @@ from alpaca.trading.enums import OrderSide, TimeInForce
 class AlpacaClient:
     def __init__(self):
         self.client = TradingClient(
-            os.getenv('ALPACA_API_KEY'),
-            os.getenv('ALPACA_SECRET_KEY'),
+            os.getenv('ALPACA_KEY'),
+            os.getenv('ALPACA_SECRET'),
             paper=True
         )
     

@@ -4,8 +4,8 @@ import os
 class GeminiClient:
     def __init__(self):
         self.exchange = ccxt.gemini({
-            'apiKey': os.getenv('GEMINI_API_KEY'),
-            'secret': os.getenv('GEMINI_API_SECRET'),
+            'apiKey': os.getenv('GEMINI_KEY'),
+            'secret': os.getenv('GEMINI_SECRET'),
             'sandbox': True
         })
     
