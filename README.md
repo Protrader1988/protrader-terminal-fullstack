@@ -34,10 +34,10 @@ pip install -r requirements.txt
 ### 4. Configure Environment Variables
 Create `.env` file:
 ```env
-ALPACA_API_KEY=your_alpaca_paper_key
-ALPACA_SECRET_KEY=your_alpaca_paper_secret
-GEMINI_API_KEY=your_gemini_sandbox_key
-GEMINI_API_SECRET=your_gemini_sandbox_secret
+ALPACA_KEY=your_alpaca_paper_key
+ALPACA_SECRET=your_alpaca_paper_secret
+GEMINI_KEY=your_gemini_sandbox_key
+GEMINI_SECRET=your_gemini_sandbox_secret
 ```
 
 ### 5. Run Application
