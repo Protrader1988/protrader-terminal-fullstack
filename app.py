@@ -1,5 +1,5 @@
-import streamlit as st
-from dotenv import load_dotenv
+
+# Production Ready - v1.0 - Institutional Grade Trading Platformfrom dotenv import load_dotenv
 from protrade.ui.dashboard import render_dashboard
 from protrade.ui.trading import render_trading_interface
 from protrade.ui.charts import render_candlestick_chart
