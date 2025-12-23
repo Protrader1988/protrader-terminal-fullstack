@@ -1,7 +1,7 @@
 
 
-import streamlit as st
 
+from dotenv import load_dotenv
 from protrade.ui.dashboard import render_dashboard
 from protrade.ui.trading import render_trading_interface
 from protrade.ui.charts import render_candlestick_chart
@@ -14,7 +14,6 @@ load_dotenv()
 
 st.set_page_config(page_title="ProTrader Terminal", layout="wide", page_icon="🚀")
 
-# Sidebar navigation
 page = st.sidebar.selectbox("Navigation", [
     "Dashboard",
     "Live Trading",
